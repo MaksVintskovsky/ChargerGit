@@ -1,0 +1,138 @@
+.services{
+    position: relative;
+	height: auto;
+	background-image: url('../img/bg/services_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: cover;
+	padding-top: 20px;
+	@media(min-width:768px){
+		padding-top: 60px;
+		height: 530px;
+	}
+	@media(min-width:1200px){
+		padding-top: 110px;
+        &::before{
+            content: "S";
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            line-height: 300px;
+            color: @main;
+            opacity: 0.2;
+            font-size: 300px;
+            position: absolute;
+            top: 0;
+            left: 50px;
+            transform: translateY(-58%);
+        }
+	}
+}
+.services__text-wrapper{
+	position: relative;
+	height: 125px;
+	width: 100%;
+	max-width: 1140px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+    
+	@media(min-width:768px){
+	 	padding-left: 10px;
+		padding-right: 10px;
+		height: 145px;
+	}
+}
+.services__container-wrapper {
+    height: auto;
+	width: 100%;
+	max-width: 1140px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	align-items:  center;
+	padding-left: 30px;
+	padding-right: 30px;
+	
+	@media(min-width:768px){
+	 	flex-direction: row;
+	 	justify-content: space-between;
+	 	padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+
+.img-wrapper{
+    position: relative ;
+    max-width: 349px;
+}
+.block_1-title, .block_2-title, .block_3-title{
+    position: absolute;
+    font-size: 24px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hover-block-1, .hover-block-2, .hover-block-3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 6; 
+}
+.hover-block-1-wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    background: rgba(0, 0, 0, .6);
+ }   
+
+.hover-block-1-border{
+    border: 2px solid @main;
+    margin: 25px;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    
+    @media(min-width:992px){
+		padding: 0 50px;
+	}
+    
+}
+.hover-block-1-border-title{
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 30px;
+    &::after{
+        content: "";
+        border-bottom: 2px solid @main;
+        width: 30px;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.hover-block-1-border-description{
+    margin-bottom: 25px;
+}
+.services-vertical{
+    position: absolute;
+    bottom: 120px;
+    left: 100px;
+}

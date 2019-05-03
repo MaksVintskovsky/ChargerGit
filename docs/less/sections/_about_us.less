@@ -1,0 +1,60 @@
+.about_us{
+    position: relative;
+	color:#000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px ;
+	@media(min-width:950px){
+		flex-direction: row;
+		justify-content: center;
+		padding-top: 75px ;
+		padding-bottom: 75px;
+	}
+	@media(min-width:1200px){
+		padding-top: 125px ;
+		padding-bottom: 125px;
+        &::after{
+            content: "A";
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            line-height: 300px;
+            color: @main;
+            opacity: 0.2;
+            font-size: 300px;
+            position: absolute;
+            top: 0;
+            right: 150px;
+            transform: translateY(20%);
+            z-index: -1;
+        }
+	}
+	img{
+		max-width:650px;
+		width: 100%;
+	}
+}
+.about_us__text{
+	height: 380px;
+	width: 300px;
+	padding-top: 35px;
+	
+	@media(min-width:950px){
+		padding-top: 135px;
+		width: 380px;
+		margin-left: 15px;
+		height: 540px;
+	}
+	@media(min-width:1140px){
+		margin-left: 90px;
+	}
+}
+.about_us-vertical{
+    position: absolute;
+    bottom: 200px;
+    right: 160px;
+}
+
+
+
+

@@ -1,0 +1,138 @@
+.comments{
+    position: relative;
+	height: 600px;
+	background-image: url('../img/bg/description_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: cover;
+    
+    @media(min-width:768px){
+		height: 780px;
+	}
+    @media(min-width:1200px){
+		height: 900px;
+        &::after{
+            content: "C";
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            line-height: 300px;
+            color: @main;
+            opacity: 0.2;
+            font-size: 300px;
+            position: absolute;
+            bottom: 0;
+            right: 50px;
+            transform: translateY(42%);
+        }
+        &::before{
+            content: "T";
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            line-height: 300px;
+            color: @main;
+            opacity: 0.2;
+            font-size: 300px;
+            position: absolute;
+            top: 0;
+            left: 50px;
+            transform: translateY(-58%);
+        }
+	}
+}
+
+.comments__wrapper{
+    width: 50%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    
+    @media(min-width:768px){
+//        width: 600px;
+        height: 780px;
+
+	}
+    @media(min-width:1200px){
+//        width: 800px;
+        height: 900px;
+
+	}
+}
+.comment{
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 45px;
+    &::after{
+        content: "";
+        border-bottom: 2px solid @main;
+        width: 130px;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media(min-width:768px){
+        font-size: 30px;
+	}
+    @media(min-width:1200px){
+        font-size: 36px;
+	}
+    
+}
+.author{
+    font-size: 24px;
+     @media(min-width:768px){
+        font-size: 30px;
+	}
+}
+.author_car{
+    font-size: 14px;
+     @media(min-width:768px){
+        font-size: 18px;
+	}
+}
+
+.btn{
+    position: absolute;
+    top: 40%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: lighter;
+    color: #a7a7a7;
+    &:hover{
+        color: #fff;
+    }
+}
+.prev{
+    left: 8%;
+    @media(min-width:768px){
+        left: 14%;
+	}
+}
+.next{
+    right: 8%;
+    @media(min-width:768px){
+        right: 14%;
+	}
+}
+.comments-vertical{
+    position: absolute;
+    bottom: 200px;
+    left: 160px;
+}
+
+
+
+
+
+
+

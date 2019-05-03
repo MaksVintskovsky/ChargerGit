@@ -1,0 +1,91 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-buttons div{
+		display: none;
+}
+@media ( min-width:768px ){
+	.owl-theme .owl-controls .owl-buttons div{
+		display: block;
+		position: absolute;
+		top: 40%;
+		opacity: 0.7;
+	}
+}
+@media ( min-width:1200px ){
+	.owl-theme .owl-controls .owl-buttons div{
+		top: 50%;
+	}
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+	left: 40px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next{
+	right: 40px;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+
+/*@media(min-width: 992px){*/
+.owl-theme .owl-controls .owl-page span{
+    display: block;
+    font-size: 0px;
+    border-bottom: 1px solid #555;
+    width: 16px;
+    height: 12px;
+    margin: 5px 0px;
+    filter: Alpha(Opacity=50);/*IE7 fix*/
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    border-bottom: 2px solid #e3a062;
+    width: 16px;
+    height: 12px;
+    margin: 5px 0px;
+    filter: Alpha(Opacity=100);/*IE7 fix*/
+}
+
+/* If PaginationNumbers is true */
+
+
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+.owl-pagination{
+	position: absolute;
+	bottom: 158px;
+	left: 0;
+	right: 0;
+    z-index: 4;
+}
+@media(min-width: 1200px){
+    .owl-pagination{
+        bottom: 38px;
+    }
+}

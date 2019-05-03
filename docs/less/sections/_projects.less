@@ -1,0 +1,92 @@
+.projects{
+    position: relative;
+	color: #000;
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 30px;
+	@media(min-width:768px){
+		margin-top: 65px;
+		margin-bottom: 60px;
+	}
+	@media(min-width:992px){
+		margin-top: 125px;
+	}
+	@media(min-width:1200px){
+		margin-top: 175px;
+		margin-bottom: 100px;
+	}
+}
+
+.projects-row1{
+    position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: center;
+	margin-top: 20px;
+	@media(min-width:768px){
+		flex-wrap: nowrap;
+		max-height: 360px;
+		width: 100%;
+		margin-top: 50px;
+	}
+    @media(min-width:1200px){
+        &::after{
+            content: "P";
+            font-family: 'Playfair Display';
+            font-weight: 700;
+            line-height: 300px;
+            color: @main;
+            opacity: 0.2;
+            font-size: 300px;
+            position: absolute;
+            top: 0;
+            right: 50px;
+            transform: translateY(-58%);
+            z-index: -1;
+        }
+    }
+	div{
+		margin: 0px 10px;
+		max-width: 40%;
+		@media(min-width:768px){
+			width: auto;
+			margin: 0px 10px;
+			margin-bottom: 15px;
+		}
+		@media(min-width:1200px){
+			margin: 0px 20px;
+			margin-bottom: 35px;
+		}
+	}
+}
+.projects-row2{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	@media(min-width:768px){
+		flex-wrap: nowrap;
+		max-height: 360px;
+		width: 100%;
+	}
+    @media(min-width:1200px){
+		margin-bottom: 30px;
+	}
+	div{
+		margin: 0px 10px;
+		max-width: 40%;
+		@media(min-width:768px){
+			width: auto;
+			margin: 0px 10px;
+		}
+		@media(min-width:1200px){
+			margin: 0px 20px;
+		}
+	}
+}
+.projects-vertical{
+    position: absolute;
+    bottom: 40px;
+    right: 160px;
+}
